@@ -1,11 +1,15 @@
 from typing import Union
 import numpy as np
+from mathx.linalg.matrix.col_vec import ColVec
+
+from sensorx.sensor import Sensor
+
 
 class Obs:
     '''
     For sensor, time, obs
     '''
-    def __init__(self, sensor_id:int, time:float, obs_vec:ColumnVec):
-        self.__sensor_id = sensor_id
+    def __init__(self, sensor:Sensor, time:float, vec:ColVec):
+        self.__sensor:Sensor = sensor
         self.__time = time
-        self.__vec = vec
+        self._col_vec = col_vec

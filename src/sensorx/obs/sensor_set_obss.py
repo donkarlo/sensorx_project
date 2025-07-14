@@ -3,7 +3,7 @@ import numpy as np
 from sensorx.sensor import Sensor
 
 
-class SensorSetObsSeq:
+class SensorSetObss:
     def __init__(self):
         ''''''
         # it will hold sensor id as key and a single_sensor_time_val_seq
@@ -15,5 +15,5 @@ class SensorSetObsSeq:
 
 
 
-    def add_one_time_sensor_time_obs(self, sensor:Sensor, time:float, vec:ColumnVec):
+    def add_one_time_sensor_time_obs(self, sensor:Sensor, time:float, obs:Obs):
         pass

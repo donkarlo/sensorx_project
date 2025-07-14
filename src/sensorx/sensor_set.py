@@ -9,7 +9,7 @@ class SensorSet:
     '''
     def __init__(self, sensors: list[Union[Sensor, "SensorSet"]], sensor_set_id=None , parent_id=None):
         '''
-        For example a GPS and LIDAR
+        For example a GPS and LIDAR in a Robot. But it can be a set of related sensors for some reason event in multiple robots
         :param sensors:
         :param parent_id: if the two sensors in this sensor set belongs to a multi robot system
         :param sensor_set_id: current body, current robot
@@ -21,9 +21,8 @@ class SensorSet:
         #@todo assign automatically
         self.sensor_set_id = sensor_set_id
 
-    @staticmethod
     def print_sensors():
         print ("To print sensors")
 
-if __name__ == "__main__":
-    sen = SensorSet.print_sensors()
+    def get_sensor_set_id(self):
+        return self.sensor_set_id

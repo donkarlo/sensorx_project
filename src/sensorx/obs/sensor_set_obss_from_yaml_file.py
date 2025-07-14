@@ -1,7 +1,7 @@
 import yaml
 from yaml import CLoader
 
-class SensorSetObsSeqFromYamlFile(SensorSetObsSeq):
+class SensorSetObssFromYamlFile(SensorSetObss):
     def __init__(self, path_to_yaml_file):
         self._path_to_yaml_file = path_to_yaml_file
 
