@@ -7,7 +7,7 @@ class SensorSet:
     '''
     Sensors of the same parent for example sensors of a robot
     '''
-    def __init__(self, sensors: list[Union[Sensor, "SensorSet"]], sensor_set_id=None , parent_id=None):
+    def __init__(self, sensors: list[Sensor, ...], sensor_set_id=None , parent_id=None):
         '''
         For example a GPS and LIDAR in a Robot. But it can be a set of related sensors for some reason event in multiple robots
         :param sensors:

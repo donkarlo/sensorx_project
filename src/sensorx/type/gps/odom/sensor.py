@@ -4,5 +4,5 @@ from sensorx.type.type import Type
 
 
 class Sensor(BaseSensor):
-    def __init__(self, type:Type, id:int=None, sensor_set:SensorSet=None, freq:int=None):
-        pass
+    def __init__(self, type:int, freq:UnitedScalarVal, id:int=None):
+        super().__init__(type, freq)
