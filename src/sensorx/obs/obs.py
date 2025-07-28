@@ -9,7 +9,7 @@ class Obs:
     '''
     For sensor, time, obs
     '''
-    def __init__(self, sensor:Sensor, time:float, vec:ColVec):
+    def __init__(self, sensor:Sensor, time:float, col_vec:ColVec):
         self.__sensor:Sensor = sensor
         self.__time = time
         self._col_vec = col_vec

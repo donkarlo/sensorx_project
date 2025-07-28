@@ -1,6 +1,6 @@
 from typing import Union
 import numpy as np
-from sensorx.sensor import Sensor
+from sensorx.obs.sensor import Sensor
 
 
 class SensorSetObss:
